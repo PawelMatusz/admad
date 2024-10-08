@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Admad zadanie</title>
+</head>
+<body>
+<h1>Wyszukiwarka Filmów</h1>
+<label for="type">Wybierz typ:</label>
+<select data-select id="type">
+    <option value="movie">Film</option>
+    <option value="series">Serial</option>
+    <option value="episode">Epizod</option>
+</select>
+
+<br><br>
+
+<label for="title">Wpisz tytuł:</label>
+<input data-input type="text" id="title" placeholder="Wprowadź tytuł">
+<h2 >Wyniki:<span data-total-results></span></h2>
+<table data-table>
+    <thead>
+    <tr>
+        <th>Tytuł</th>
+        <th>Rok</th>
+        <th>Kraj</th>
+        <th>Typ</th>
+    </tr>
+    </thead>
+    <tbody data-table-body>
+    <tr data-table-row style="display: none;">
+        <td class="title"></td>
+        <td class="year"></td>
+        <td class="country"></td>
+        <td class="type"></td>
+    </tr>
+    </tbody>
+</table>
+
+<script src="index.js"></script>
+</body>
+</html>
